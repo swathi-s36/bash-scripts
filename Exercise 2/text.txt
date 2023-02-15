@@ -1,0 +1,5 @@
+This file is passed as argument.
+To count the number of characters
+On each line.
+This file contains 5 lines in total
+This is the last line.

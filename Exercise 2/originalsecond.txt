@@ -1,0 +1,2 @@
+This is a duplicate document for deletion.
+But with additional content to check if there are multiple files with same content does the script delete.

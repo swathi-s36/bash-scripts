@@ -1,0 +1,51 @@
+swathi@swathi:~/FinalAssignment$ filename=Bash.bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${#filename}
+27
+swathi@swathi:~/FinalAssignment$ echo ${filename:5}
+bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename:5:3}
+bis
+swathi@swathi:~/FinalAssignment$ echo ${#filename}
+27
+swathi@swathi:~/FinalAssignment$ echo ${Filename:=lucas}
+lucas
+swathi@swathi:~/FinalAssignment$ echo $Filename
+lucas
+swathi@swathi:~/FinalAssignment$ echo ${FILENAME:-george}
+george
+swathi@swathi:~/FinalAssignment$ echo $FILENAME
+
+swathi@swathi:~/FinalAssignment$ echo ${FILENAME:?File}
+bash: FILENAME: File
+swathi@swathi:~/FinalAssignment$ echo ${filename^}
+Bash.bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename^^}
+BASH.BISH.BOSH.BOUSH.TAR.GZ
+swathi@swathi:~/FinalAssignment$ echo ${filename,}
+bash.bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename,,}
+bash.bish.bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename~}
+bash.bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename~~}
+bASH.BISH.bOSH.BOUSH.TAR.GZ
+swathi@swathi:~/FinalAssignment$ echo ${filename#*sh.}
+bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename##*sh.}
+tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename%.b*}
+Bash.bish.Bosh
+swathi@swathi:~/FinalAssignment$ echo ${filename%%.b*}
+Bash
+swathi@swathi:~/FinalAssignment$ echo ${filename/sh/shell}
+Bashell.bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename//sh/shell}
+Bashell.bishell.Boshell.boushell.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename/sh}
+Ba.bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename//sh/shell}
+Bashell.bishell.Boshell.boushell.tar.gz
+swathi@swathi:~/FinalAssignment$ echo ${filename:=10}
+Bash.bish.Bosh.boush.tar.gz
+swathi@swathi:~/FinalAssignment$ echo $filename
+Bash.bish.Bosh.boush.tar.gz
